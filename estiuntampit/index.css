@@ -1,0 +1,32 @@
+.titlu{
+    font-size: x-large;
+    text-align: center;
+}
+#input{
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 200px;
+    border: 4px solid #ccc;
+    background-color: #2DC2BD;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+#input::placeholder{
+    color: #777;
+}
+#input:focus {
+    border: 4px solid #A799B7;
+    outline: none;
+}
+#button{
+    font-size: xx-large;
+    background-color: #48cae4;
+    border: none;
+    transition: 0.2 all;
+    color: #0d0c22;
+}
+#button:hover{
+    background-color: #2DC2BD;
+    color: #fff;
+}

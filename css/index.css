@@ -1,0 +1,41 @@
+#salut{
+    margin-bottom: 300px;
+    margin-top: 200px;
+    text-align: center;
+    font-size: xx-large;
+}
+#despre_site{
+    max-width: 50%;
+    font-size: x-large;
+    background-color: #709bff;
+    width: fit-content;
+    height: auto;
+    margin-right: 10px;
+}
+#despre_mine{
+    max-width: 50%;
+    background-color: #709bff;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+}
+#despre{
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media(max-width: 900px){
+    #despre{
+        flex-direction: column;
+    }
+    #despre_site{
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #despre_mine{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+}

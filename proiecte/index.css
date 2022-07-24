@@ -1,0 +1,35 @@
+.titlu{
+    text-align: center;
+    font-size: xx-large;
+}
+.triproiect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 33%;
+}
+.doiproiect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 50%;
+}
+.proiect3{
+    width: 30%;
+    background-color: #709bff;
+    height: auto;
+}
+.proiect h1{
+    text-align: center;
+    font-size: xx-large;
+}
+.proiect h2{
+    text-align: start;
+    font-size: xx-large;
+}
+.proiect2{
+    width: 50%;
+    background-color: #709bff;
+    height: auto;
+    margin-left: 10px;
+}

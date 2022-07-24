@@ -1,0 +1,45 @@
+#navbar{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #b8b8ff;
+    font-size: large;
+}
+#navbar ul{
+    display: flex;
+    justify-content: space-around;
+}
+#navbar li{
+    margin-left: 25px;
+}
+#navbar li:hover{
+    list-style: "👉";
+}
+#navbar li{
+    list-style: none;
+    margin: 20px;
+}
+#bara{
+    display: none;
+    text-align: end;
+}
+a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+@media (max-width: 900px) {
+    #navbar ul{
+        flex-direction: column;
+        display: none;
+    }
+    #bara{
+        display: block;
+    }
+    #titlu{
+        display: block;
+    }
+    #navbar li{
+        text-align: center;
+    }
+}

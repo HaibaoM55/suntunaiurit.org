@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ADA7FF;
+    color: #ffffff;
+    margin: 0px;
+}
+.subliniat{
+    text-decoration: underline 5px;
+    text-decoration-color: #f7b538;
+}
+.centru{
+    text-align: center;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}  
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}

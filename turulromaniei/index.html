@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css">
+    <title>Turul Romaniei</title>
+</head>
+<body>
+    <div id  = "tabla">
+        <div id = "joaca">
+            <h1>Turul Romaniei</h1>
+            <button id = "joaca_btn" onclick="start()" >Joaca</button> 
+        </div>
+        <div id = "joc">
+            <img src = "tabla.png" id = "tabla_img">
+            <div id = "jucatori">
+                <div id = "anunt">
+                    <h2 id = "anunt_text"></h2>
+                </div>
+                <div id = "j_1">
+                    <h2>Jucator 1</h2>
+                    <h3 id = "bani_j1">5.000.000</h3>
+                </div>
+                <div id = "j_2">
+                    <h2>Jucator 2</h2>
+                    <h3 id = "bani_j2">5.000.000</h3>
+                </div>
+            </div>
+            <button onclick = "zar()" id = "zar_btn" class = "btn_zar_s">Zar</button>
+            <div id = "zar">
+                <h3 id = "zar1" class = "zar"></h3>
+                <h3 id = "zar2" class = "zar"></h3>
+            </div>
+            <div id = "orase-owneri">
+                <div id = "bucuresti">
+                    <h3 id = "bucuresti_owner"></h3>
+                    <h3 id = "text">1.Bucuresti</h3>
+                </div>
+                <div id = "iasi">
+                    <h3 id = "iasi_owner"></h3>
+                    <h3 id = "text">2.Iasi</h3>
+                </div>
+                <div id = "timisoara">
+                    <h3 id = "timisoara_owner"></h3>
+                    <h3 id = "text">3.Timisoara</h3>
+                </div>
+                <div id = "cluj">
+                    <h3 id = "cluj_owner"></h3>
+                    <h3 id = "text">4.Cluj</h3>
+                </div>
+                <div id = "bacau">
+                    <h3 id = "bacau_owner"></h3>
+                    <h3 id = "text">5.Bacau</h3>
+                </div>
+                <div id = "constanta">
+                    <h3 id = "constanta_owner"></h3>
+                    <h3 id = "text">6.Constanta</h3>
+                </div>
+                <div id = "suceava">
+                    <h3 id = "suceava_owner"></h3>
+                    <h3 id = "text">7.Suceava</h3>
+                </div>
+                <div id = "craiova">
+                    <h3 id = "craiova_owner"></h3>
+                    <h3 id = "text">8.Craiova</h3>
+                </div>
+                <div id = "pitesti">
+                    <h3 id = "pitesti_owner"></h3>
+                    <h3 id = "text">9.Pitesti</h3>
+                </div>
+                <div id = "bistrita">
+                    <h3 id = "bistrita_owner"></h3>
+                    <h3 id = "text">10.Bistrita</h3>
+                </div>
+                <div id = "oradea">
+                    <h3 id = "oradea_owner"></h3>
+                    <h3 id = "text">11.Oradea</h3>
+                </div>
+                <div id = "targoviste">
+                    <h3 id = "targoviste_owner"></h3>
+                    <h3 id = "text">12.Targoviste</h3>
+                </div>
+                <div id = "galati">
+                    <h3 id = "galati_owner"></h3>
+                    <h3 id = "text">13.Galati</h3>
+                </div>
+            </div>
+            <div id = "pop-up">
+                <h2>Vrei sa cumperi?</h2>
+                <h3 id = "pret"></h3>
+                <button id = "da" onclick = "cumpara()">Da</button>
+                <button id = "nu" onclick = "document.getElementById('pop-up').style.display = 'none';">Nu</button>
+            </div>
+            <div id = "highlighter">
+            </div>
+            <img src = "jucator1.png" id = "text_j1">
+            <img src = "jucator2.png" id = "text_j2">
+        </div>
+    </div>
+</body>
+<script src = "joc.js"></script>
+</html>
