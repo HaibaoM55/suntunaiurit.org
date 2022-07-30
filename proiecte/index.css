@@ -33,3 +33,12 @@
     height: auto;
     margin-left: 10px;
 }
+@media (max-width: 1000px) {
+    .triproiect{
+        flex-direction: column;
+    }
+    .proiect3{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
