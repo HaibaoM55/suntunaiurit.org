@@ -38,4 +38,45 @@
         max-width: 100%;
         margin-left: 0px;
     }
+    #anunt_text{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    #poll{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+#anunt{
+    display: grid;
+    font-size: x-large;
+    max-width: 100%;
+    align-items: end;
+    place-items: end;
+    text-align: end;
+}
+#anunt_text{
+    text-align: start;
+    background-color: #709bff;
+    max-width: 40%;
+}
+.ascuns{
+    opacity: 0;
+    transform: translateX(-70%);
+    transition: all 2200ms;
+}
+@media(prefers-reduced-motion){
+    .ascuns{
+        transition: none;
+    }
+}
+.aratat{
+    opacity: 1;
+    transform: translateX(0%);
+}
+#poll{
+    text-align: start;
+    background-color: #709bff;
+    max-width: 40%;
+    font-size: x-large;
 }

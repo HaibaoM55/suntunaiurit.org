@@ -164,3 +164,6 @@ body{
     top: 180px;
     left: 400px;
 }
+#pop-up{
+    display: none;
+}
