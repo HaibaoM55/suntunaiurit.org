@@ -1,5 +1,5 @@
-let api = "../anunt/api"
+anunt = "../../anunt/api"
 
-fetch (api)
+fetch (anunt)
 .then(x => x.text())
 .then(y => $("anunt").innerHTML = y);

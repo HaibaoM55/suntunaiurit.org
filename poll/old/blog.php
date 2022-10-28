@@ -29,8 +29,13 @@
             </ul>
         </div>
         <div style = "font-size: xx-large;">
-            <img src = "no poll.png">
-            <!-- <form method = "post">
+            <h2>Poll bazat!11!1!!</h2>
+            <h2>Vreti sa fac un blog pe suntunaiurit?</h2>
+            <h2>
+                In principal s-ar axa pe programare si tutoriale
+                (ma straduiesc sa fie bune).
+            </h2>
+            <form method = "post">
                 <input class = "btn1" type = "submit" value = "Da, este o idee mafioata😎" name = "da">
                 </input>
                 <br>
@@ -38,7 +43,7 @@
                 <br>
                 <input class = "btn1" type = "submit"
                 value = "Nu, este foarte naspa🤢🤮" name = "nu"></button>
-            </form> -->
+            </form>
         </div>
                 <?php 
         if(array_key_exists('da', $_POST)) {

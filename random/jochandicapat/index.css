@@ -1,0 +1,44 @@
+#game{
+    position: relative;
+    top: 100px;
+    height: 600px;
+    width: 800px;
+    outline: 10px solid black;
+    margin-left: 10px;
+}
+#player{
+    width: 40px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    top: 500px;
+    left: 0px;
+}
+.jump{
+    animation: jump 250ms linear;
+}
+@keyframes jump{
+    0%{top: 500px;}
+    40%{top: 350px;}
+    60%{top: 350px;}
+    100%{top: 500px;}
+}
+#enemy{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 480px;
+    left: 780px;
+    animation: enemy_glide 1s infinite linear;
+}
+@keyframes enemy_glide{
+    0%{left: 780px;}
+    100%{left: -40px;}
+} 
+#ded_text{
+    display: none;
+}
+#ded_btn{
+    display: none;
+}

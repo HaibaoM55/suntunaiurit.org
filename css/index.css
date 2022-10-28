@@ -7,14 +7,14 @@
 #despre_site{
     max-width: 50%;
     font-size: x-large;
-    background-color: #709bff;
+    background-color: #ada7ff;
     width: fit-content;
     height: auto;
     margin-right: 10px;
 }
 #despre_mine{
     max-width: 50%;
-    background-color: #709bff;
+    background-color: #ada7ff;
     height: fit-content;
     width: fit-content;
     margin-left: 10px;
@@ -57,7 +57,7 @@
 }
 #anunt_text{
     text-align: start;
-    background-color: #709bff;
+    background-color: #ada7ff;
     max-width: 40%;
 }
 .ascuns{
@@ -76,7 +76,7 @@
 }
 #poll{
     text-align: start;
-    background-color: #709bff;
+    background-color: #ada7ff;
     max-width: 40%;
     font-size: x-large;
 }

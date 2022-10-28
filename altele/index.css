@@ -1,0 +1,11 @@
+#altele{
+    font-size: xx-large;
+    text-align: center;
+}
+#link-uri li{
+    list-style: none;
+    font-size: x-large;
+}
+#link-uri li:hover{
+    list-style: "👉";
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html onclick = "jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "/img/favicon.png">
+    <link rel = "stylesheet" href="index.css"> 
+    <link rel = "stylesheet" href = "/css/global.css">
+    <link rel = "stylesheet" href = "/css/navbar.css">
+    <title>Nu stiu ce nume sa-i dau</title>
+</head>
+<script src ="/js/components/navbar.js"></script>
+<body>
+    <div id = "navbar">
+        <script>
+            navbar();
+        </script>
+    </div>
+    <div id = "game">
+        <div id = "player"></div>
+        <div id = "enemy"></div>
+        <center>
+            <h1 id= "score">0</h1>
+        </center>
+        <center>
+            <h1 id = "ded_text">Ai murit, prostule</h1>
+        </center>
+        <center>
+        <button id = "ded_btn" class = "btn1" onclick = "refresh()">Joaca din nou</button>
+        </center>
+    </div> 
+</body>
+<script src = "global.js"></script>
+<script src = "index.js"></script>
+</html>

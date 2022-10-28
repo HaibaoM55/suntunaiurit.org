@@ -1,0 +1,24 @@
+#blog_titlu{
+    text-align: center;
+    font-size: xx-large;
+}
+.blog_mare{
+    height: auto;
+    display: grid;
+    max-width: 100%;
+    align-items: center;
+    place-items: center;
+    font-size: x-large;
+}
+.blog_mare_text{
+    max-width: 50%;
+    background-color: #709bff;
+}
+.blog_mare_text h1{
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .blog_mare_text{
+        max-width: 100%;
+    }
+}
