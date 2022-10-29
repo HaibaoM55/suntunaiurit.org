@@ -12,19 +12,22 @@ body{
 .centru{
     text-align: center;
 }
-table{
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}  
-td, th{
-    border: 1px solid #dddddd;
+  }
+  
+  td, th {
+    border: 3px solid rgb(45, 101, 146);
     text-align: left;
     padding: 8px;
-}
-tr:nth-child(even){
-    background-color: #dddddd;
-}
+    font-size: xx-large;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #5984e0;
+  }
 .btn1{
     padding: 15px 25px;
     border: unset;
@@ -59,4 +62,18 @@ tr:nth-child(even){
 }
 .btn1:hover::before{
     width: 100%;
+}
+.ascuns{
+    opacity: 0;
+    transform: translateX(-70%);
+    transition: all 2200ms;
+}
+@media(prefers-reduced-motion){
+    .ascuns{
+        transition: none;
+    }
+}
+.aratat{
+    opacity: 1;
+    transform: translateX(0%);
 }

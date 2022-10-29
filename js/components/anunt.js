@@ -1,5 +1,7 @@
-anunt = "../../anunt/api"
+anunt_path = "../../anunt/api"
 
-fetch (anunt)
-.then(x => x.text())
-.then(y => $("anunt").innerHTML = y);
+function anunt(){
+    fetch (anunt_path)
+    .then(x => x.text())
+    .then(y => $("anunt").innerHTML = y);
+}

@@ -19,6 +19,12 @@ while(True):
     elif("del page " in cmd):
         page_name = cmd.replace("del page ", "")
         commands.del_page(page_name)
+    elif("make file " in cmd):
+        file_name = cmd.replace("make file ", "")
+        commands.make_file(file_name)
+    elif("del file " in cmd):
+        file_name = cmd.replace("del file ", "")
+        commands.del_file(file_name)
     elif("cd " in cmd):
         directory = cmd.replace("cd ", "")
         commands.cd(directory)

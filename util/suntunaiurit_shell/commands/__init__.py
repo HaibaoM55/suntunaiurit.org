@@ -91,6 +91,10 @@ def del_page(name):
     os.remove(html_path)
     os.removedirs(page_path)
     shellprint("Finished removing the page.") 
+def make_file(name):
+    os.system(f"nvim {pathtoroot}/{name}")
+def del_file(name):
+    os.remove(f"{pathtoroot}/{name}")
 def tree():
     os.system(f"tree {pathtoroot}")
 def ls():

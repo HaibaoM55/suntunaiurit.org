@@ -1,0 +1,38 @@
+#anunt{
+    display: grid;
+    font-size: x-large;
+    max-width: 100%;
+    align-items: end;
+    place-items: end;
+    text-align: end;
+}
+#anunt_text{
+    text-align: start;
+    background-color: #ada7ff;
+    max-width: 40%;
+}
+@media(max-width: 900px){
+    #anunt_text{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+#storytime{
+    display: grid;
+    font-size: x-large;
+    max-width: 100%;
+    align-items: start;
+    place-items: start;
+    text-align: start;
+}
+#storytime_text{
+    text-align: start;
+    background-color: #ada7ff;
+    max-width: 40%;
+}
+@media(max-width: 900px){
+    #storytime_text{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
