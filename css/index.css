@@ -50,3 +50,10 @@
     max-width: 40%;
     font-size: x-large;
 }
+#meg_png{
+    transition: 200ms ease-in;
+}
+#meg_png:hover{
+    height: 100px;
+    width: 100px;
+}
