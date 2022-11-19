@@ -1,12 +1,22 @@
 import commands
 inputext = "root@suntunaiurit.org"
 print(f"SuntUnAiurit Shell v{commands.getversion()}")
+cmds = [
+"ver", "exit", "help", "make component", 
+"make page", "del component", "del page",
+"make file", "del file","cd", "img", "cat",
+"clear","tree", "ls"
+]
+
 while(True):
     cmd = input(f"{inputext} \x1b[6;30;44m{commands.getdir()}\x1b[0m>")
     if(cmd == "ver"):
         commands.ver()
     elif(cmd == "exit"):
         break
+    elif(cmd == "help"):
+        for i in range(len(cmds)-1):
+            print(f"\x1b[6;30;44m{cmds[i]}\x1b[0m")
     elif("make component " in cmd):
         comp_name = cmd.replace("make component ", "")
         commands.make_component(comp_name)

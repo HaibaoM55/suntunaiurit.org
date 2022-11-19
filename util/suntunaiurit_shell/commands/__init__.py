@@ -2,7 +2,7 @@ import os
 from sys import platform
 os.system("color")
 
-v = "0.1"
+v = "0.11"
 pathtoroot = "../.."
 ghilimele = '"'
 acolada1 = "{"
