@@ -5,9 +5,9 @@ cmds = [
 "ver", "exit", "help", "make component", 
 "make page", "del component", "del page",
 "make file", "del file","cd", "img", "cat",
-"clear","tree", "ls"
+"clear","tree", "ls", "reload"
 ]
-
+cmds.sort()
 while(True):
     cmd = input(f"{inputext} \x1b[6;30;44m{commands.getdir()}\x1b[0m>")
     if(cmd == "ver"):
@@ -50,5 +50,7 @@ while(True):
         commands.tree()
     elif(cmd == "ls"):
         commands.ls()
+    elif(cmd == "reload"):
+        commands.reloadf()
     else:
         print("Unknown command")

@@ -2,7 +2,7 @@ import os
 from sys import platform
 os.system("color")
 
-v = "0.11"
+v = "0.12"
 pathtoroot = "../.."
 ghilimele = '"'
 acolada1 = "{"
@@ -87,8 +87,8 @@ def make_page(name):
     shellprint("Finished making a sample page.")
 def del_page(name):
     page_path = f"{pathtoroot}/{name}"
-    html_path = f"{pathtoroot}/{name}/index.html"
-    os.remove(html_path)
+    for file in os.listdir(pathtoroot+"/"+name):
+        os.remove(f"{pathtoroot}/{name}/{file}")
     os.removedirs(page_path)
     shellprint("Finished removing the page.") 
 def make_file(name):
@@ -125,9 +125,9 @@ def cd(directory):
 
 def cat(path):
     content = ""
-    with open(f"{pathtoroot}/{path}", "r") as cat:
+    with open(f"{pathtoroot}/{path}", "rb") as cat:
         content = cat.read()
-    print(content)
+    print(str(content))
 def img(image):
     if(platform == "win32"):
         os.system(f"start {pathtoroot}/{image}")
@@ -163,3 +163,6 @@ def getdir():
         return "~"
     else:
         return lastdir
+def reloadf():
+    os.system("python main.py")
+    exit()
