@@ -4,11 +4,14 @@
 }
 .unproiect{
 	font-size: large;
-	text-align: center;
+	/* text-align: center; */
 	width: 30%;
 	height: auto;
 	background-color: #ada7ff;
 	margin-bottom: 40px;
+}
+.unproiect h2{
+    text-align: start;
 }
 .triproiect{
     display: flex;
