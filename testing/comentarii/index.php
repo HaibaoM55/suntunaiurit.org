@@ -18,7 +18,7 @@
             </script>
         </div>
         <?php 
-            $dev = true;
+            $dev = false;
             if($dev){
                 $leloc = "localhost:3000/testing/comentarii/";
             }else{
