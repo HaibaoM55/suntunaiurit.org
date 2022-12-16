@@ -1,4 +1,4 @@
-let navbarpath = "../../navbar"
+let navbarpath = "/navbar"
 
 function navbar(){
     fetch (navbarpath)

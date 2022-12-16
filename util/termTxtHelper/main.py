@@ -1,10 +1,11 @@
 ghilimele = '"'
-txt = f"$ echo {ghilimele}Hello!{ghilimele}"
+txt = f"$ echo {ghilimele}I am HaibaoM!{ghilimele}"
 acolada = ["{", "}"]
 helper = ""
+s_point = 30
 for i in range(len(txt)):
     helper = helper+txt[i]
-    print(f"if(nr == {i}){acolada[0]}return '{helper}';{acolada[1]}")
+    print(f"if(nr == {i+s_point}){acolada[0]}return '{helper}';{acolada[1]}")
     helpr = i
 # for i in range(len(txt)):
 #     helper2 = ""
@@ -28,5 +29,5 @@ i = helpr
 for o in arr:
     # print(o)
     i+=1
-    print(f"if(nr == {i}){acolada[0]}return '{o}';{acolada[1]}")
-print(f"var termNum = nr % {len(txt)*2};")
+    print(f"if(nr == {i+s_point}){acolada[0]}return '{o}';{acolada[1]}")
+print(f"var termNum = nr % {(len(txt))*2+s_point};")
