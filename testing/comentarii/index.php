@@ -1,4 +1,15 @@
+
 <!DOCTYPE html>
+<html>
+    <head>
+        <title>COMENTARIILE SUNT INCHISE!</title>
+    </head>
+    <body>
+        <h1>Comentariile sunt inchise din cauza unui exploit de xss!</h1>
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -87,4 +98,4 @@
     </body>
     <script src = "/js/global.js"></script>
     <script src = "/js/navbar.js"></script>
-</html>
+</html> -->
