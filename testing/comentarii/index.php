@@ -1,15 +1,5 @@
-
+<!-- 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>COMENTARIILE SUNT INCHISE!</title>
-    </head>
-    <body>
-        <h1>Comentariile sunt inchise din cauza unui exploit de xss!</h1>
-    </body>
-</html>
-
-<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -37,18 +27,19 @@
             }
         ?>
         <?php 
+            $c_nr = 0;
             $com = fopen("../comentariitxt/com.txt", "r") or die("EROARE!");
             while(!feof($com)) {
+                $c_nr++;
                 $lao = fgets($com);
                 if(strpos($lao, "u/") !== false){
                     $lao = str_replace("u/", "", $lao);
                     echo "<div class = 'comment'>";
-                    echo "<h1>$lao spune:</h1>";
+                    echo "<h1 class = 'c_nume' id = 'c_nume$c_nr'></h1>";
                 }
                 else if(strpos($lao, "m/") !== false){
                     $lao = str_replace("m/", "",$lao);
-                    echo "<h2>$lao</h2>";
-                    echo "</div>";
+                    echo "<h2></h2>";
                 }
                 // echo "$lao <br>";
             }

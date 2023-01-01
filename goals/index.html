@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>2023 Goals</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Suntunaiurit - goals" />
+        <link rel = "icon" href = "/img/favicon.png" />
+        <link rel = "stylesheet" href = "index.css"/>
+    </head>
+    <script src = "/js/components/navbar.js"></script>
+    <body>
+        <div id="title">
+            <h1>
+                Steam custom info box for 2023 Goals
+            </h1>
+        </div>
+        <div id = "user_input">
+            <div id = "add_btn_div">
+                <button class="add_btn" id = "add_btn">
+                    <span class = "add_btn_plus">+</span>
+                </button>
+            </div>
+            <div id = "user_input1" class = "user_input_node">
+                <input class = "goal_input" id ="user_goal_input1" placeholder="Sample Text">
+                <button class="remove_btn" onclick = "remove_obj('user_input1')">
+                    <svg class = "remove_btn_svg" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 24 24"><g stroke-width="2" fill="#ff0000" stroke="#ff0000" class="nc-icon-wrapper"><path d="M20,9l-.867,12.142A2,2,0,0,1,17.138,23H6.862a2,2,0,0,1-1.995-1.858L4,9" fill="none" stroke="#ff0000" stroke-linecap="square" stroke-miterlimit="10"></path><line data-color="color-2" x1="1" y1="5" x2="23" y2="5" fill="none" stroke-linecap="square" stroke-miterlimit="10"></line><path data-cap="butt" data-color="color-2" d="M8,5V1h8V5" fill="none" stroke-miterlimit="10"></path></g></svg>
+                </button>
+            </div>
+        </div>
+        <button class = "done_btn" onclick = "done();">Done</button>
+        <div id = "final">
+            <h1>2023 Goals</h1>
+            <br>
+            <br>
+            <h2 id = "final_txt"></h2>
+        </div>
+    </body>
+    <script src = "/js/global.js"></script>
+    <script src = "/js/navbar.js"></script>
+    <script src = "add.js"></script>
+    <script src = "remove_obj.js"></script>
+    <script src = "done.js"></script>
+</html>

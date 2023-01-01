@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    color: #15152d;
+}
+#title{
+    font-size: x-large;
+    min-height: 150px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 4px solid #e7e7e7;
+}
+#title h1{
+    margin: 0px;
+    transform: translateY(50%);
+}
+@media (max-width: 900px) {
+    #title h1{
+        transform: translateY(0%);
+    }
+}
+#user_input{
+    margin-top: 100px;
+}
+.remove_btn{
+    display: inline;
+    border-color: transparent;
+    width: 34px;
+    height: 34px;
+    border-radius: 40%;
+    align-items: center;
+    background-color: #e7e7e7;
+}
+.remove_btn:hover{
+    background-color: #b39e9e;
+}
+
+.add_btn_plus{
+    font-size: large;
+}
+
+.add_btn{
+    background-color: rgb(43, 161, 43);
+    width: 30px;
+    height: 30px;
+    border:none;
+    border-radius: 50%;
+}
+.add_btn:hover{
+    background-color: rgb(44, 107, 44);
+}
+/* .add_btn_text{
+    visibility: hidden;
+}
+.add_btn:hover .add_btn_text{
+    position: relative;
+    left: 60px;
+    top: -25px;
+    background-color: #a3a3a3;
+    visibility: visible;
+} */
+.goal_input{
+    color: #8f8f8f;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #45f3ff;
+    border-color: #45f3ff;
+}
+.goal_input:focused{
+    border: none;
+    outline: none;
+}
+.user_input_node{
+    margin-bottom: 30px;
+}
+#final{
+    display: none;
+    color: white;
+    background-color: #15152d;
+    width: fit-content;
+    transition: ease-in 400ms;
+}
+/* #final{
+    font-size: small;
+    background-color: #1e2024;
+    width: fit-content;
+}
+#final_title{
+    font-size: x-large;
+} */
+.done_btn{
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: ease-in 400ms;
+}
+.done_btn:hover{
+    color: black;
+    background-color:#8f8f8f;
+}
