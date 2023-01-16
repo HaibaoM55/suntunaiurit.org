@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ghiceste Elementul!</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Suntunaiurit - testchimie" />
+        <link rel = "icon" href = "/img/favicon.png" />
+        <link rel = "stylesheet" href = "index.css"/>
+        <link rel = "stylesheet" href = "/css/navbar.css"/>
+        <link rel = "stylesheet" href = "/css/global.css"/>
+    </head>
+    <script src = "/js/global.js"></script>
+    <script src = "/js/components/navbar.js"></script>
+    <!-- <script src = "./js/tabel_comp.js"></script> -->
+    <body>
+        <!-- <div id = "navbar">
+            <script>
+                navbar();
+            </script>
+        </div> -->
+        <div id = "ecran_principal">
+            <!-- <div id = "titlu">
+                <h1>Ghiceste Elementul!</h1>
+                <h2>De Bogdan Raul</h2>
+            </div> -->
+            <!-- <div id = 'modifica'>
+                <button onclick = "modifica();" id = "modifica_btn">🛠️</button>
+            </div>
+            <div id = "tabel_periodic">
+                <script>
+                    tabel_comp();
+                </script>
+            </div> -->
+            <div id = "helper_element_chimic">
+                <div id="element_chimic">
+                    <div id = "nume_element"></div>
+                </div>
+            </div>
+            <div id = "elm_input_parent">
+                <input id = "element_input" 
+                class = "input" 
+                placeholder="Prescurtarea elementului">
+                <button id = "element_ok" onclick = "ok();">Ok</button>
+            </div>
+        </div>
+        <div id = "corect">
+            <p>Corect! :)</p>
+            <p class = "bifatX">✔</p>
+        </div>
+        <div id = "gresit">
+            <p>Gresit! :(</p>
+            <p class = "bifatX">❌</p>
+            <p id = "gresit_rasp_corect">Raspunsul corect era: </p>
+        </div>
+    </body>
+    <script src = "/js/navbar.js"></script>
+    <script src = "index.js"></script>
+</html>
