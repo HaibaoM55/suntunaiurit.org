@@ -10,6 +10,7 @@ class elm{
     constructor(nume, prescurtare, adauga = false){
         this.nume = nume
         this.prescurtare = prescurtare;
+        this.adauga = adauga;
         elemente[this.nume] = this.prescurtare;
         if(adauga){
             this.add();
@@ -17,6 +18,11 @@ class elm{
     }
     add(){
         dict[this.nume] = this.prescurtare;
+        this.adauga = true;
+    }
+    rmv(){
+        delete dict[this.nume];
+        this.adauga = false;
     }
 }
 
@@ -62,7 +68,24 @@ bismut = new elm('Bismut', 'Bi', true)
 poloniu = new elm('Poloniu', 'Po', true)
 astatin = new elm('Astatin', 'At', true)
 radon = new elm('Radon', 'Rn', true)
-
+franciu = new elm('Franciu', 'Fr', false);
+radiu = new elm('Radiu', 'Ra', false);
+actiniu = new elm('Actiniu', 'Ac', false);
+rutherfordiu = new elm('Rutherfordiu', 'Rf', false);
+dubniu = new elm('Dubniu', 'Db', false);
+seaborgiu = new elm('Seaborgiu', 'Sg', false);
+bohriu = new elm('Bohriu', 'Bh', false);
+hassiu = new elm('Hassiu', 'Hs', false);
+meitneriu = new elm('Meitneriu', 'Mt', false);
+darmstadțiu = new elm('Darmstadțiu', 'Ds', false);
+roentgeniu = new elm('Roentgeniu', 'Rg', false);
+coperniciu = new elm('Coperniciu', 'Cn', false);
+nihoniu = new elm('Nihoniu', 'Nh', false);
+fleroviu = new elm('Fleroviu', 'Fl', false);
+moscoviu = new elm('Moscoviu', 'Mc', false);
+livermoniu = new elm('Livermoniu', 'Lv', false);
+tennesine = new elm('Tennesine', 'Ts', false);
+oganesson = new elm('Oganesson', 'Og', false);
 function start(){
     $("element_input").value = "";
     element = elementrandom();

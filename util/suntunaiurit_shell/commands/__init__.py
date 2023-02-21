@@ -2,7 +2,7 @@ import os
 from sys import platform
 os.system("color")
 
-v = "0.12"
+v = "0.13"
 pathtoroot = "../.."
 ghilimele = '"'
 acolada1 = "{"
@@ -63,13 +63,13 @@ def make_page(name):
         <meta charset="UTF-8" />
         <title>{name.capitalize()}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Suntunaiurit - {name}" />
-        <link rel = "icon" href = "../img/favicon.png" />
+        <meta name="description" content="Salut, sunt HaibaoM55, imi place sa programez si acesta este site-ul meu!" />
+        <link rel = "icon" href = "/img/favicon.png" />
         <link rel = "stylesheet" href = "index.css"/>
-        <link rel = "stylesheet" href = "../css/navbar.css"/>
-        <link rel = "stylesheet" href = "../css/global.css"/>
+        <link rel = "stylesheet" href = "/css/navbar.css"/>
+        <link rel = "stylesheet" href = "/css/global.css"/>
     </head>
-    <script src = "../js/components/navbar.js"></script>
+    <script src = "/js/components/navbar.js"></script>
     <body>
         <div id = "navbar">
             <script>
@@ -77,8 +77,8 @@ def make_page(name):
             </script>
         </div>
     </body>
-    <script src = "../js/global.js"></script>
-    <script src = "../js/navbar.js"></script>
+    <script src = "/js/global.js"></script>
+    <script src = "/js/navbar.js"></script>
 </html>
 '''
     with open(html_path, "w") as html:
