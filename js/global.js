@@ -1,4 +1,4 @@
-prod = true;
+dev = false;
 function $(id){
     return document.getElementById(id)
 }
