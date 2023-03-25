@@ -5,6 +5,7 @@
     text-align: center;
     font-size: xx-large;
 }
+
 #despre_site{
     max-width: 50%;
     font-size: x-large;
@@ -25,7 +26,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} 
 @media(max-width: 900px){
     #despre{
         flex-direction: column;
@@ -43,7 +44,7 @@
         min-width: 100%;
         max-width: 100%;
     }
-}
+} 
 #poll{
     text-align: start;
     background-color: #ada7ff;
@@ -56,4 +57,10 @@
 #meg_png:hover{
     height: 100px;
     width: 100px;
+}
+footer{
+    height: 20px;
+    width: 100%;
+    background-color: #6b6798;
+    color: white;
 }
