@@ -1,0 +1,28 @@
+#blog_txt_hlpr{
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+#blog_txt{
+    margin-top: 100px;
+    min-width: 80%;
+    background-color: #353535;
+    box-shadow: 1px 1px 10px 10px #000;
+}
+#blog_txt_titlu{
+    text-align: center;
+}
+#blog_txt h2, #blog_txt ul{
+    max-width: 40%;
+    font-size: x-large;
+}
+@media(max-width: 800px){
+    #blog_txt h2, #blog_txt ul{
+        max-width: 70%;
+    }
+}
+@media(max-width: 600px){
+    #blog_txt h2, #blog_txt ul{
+        max-width: 100%;
+    }
+}

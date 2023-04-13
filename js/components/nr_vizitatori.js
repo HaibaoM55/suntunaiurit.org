@@ -1,7 +1,2 @@
-if(dev){
-    leURL = "http://localhost:3000/php/nr_viz"
-}else{
-    leURL = "https://suntunaiurit.org/php/nr_viz/"
-}
-fetch(leURL);
+fetch("/php/nr_viz/");
 $("nr_viz").innerText = $("nr_viz").innerText + " " + loadFile("/php/nr_viz/a.txt");

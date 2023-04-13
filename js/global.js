@@ -1,4 +1,3 @@
-dev = false;
 function $(id){
     return document.getElementById(id)
 }
@@ -31,4 +30,8 @@ function loadFile(filePath) {
       result = xmlhttp.responseText;
     }
     return result;
+}
+
+function pop_up(txt){
+    
 }

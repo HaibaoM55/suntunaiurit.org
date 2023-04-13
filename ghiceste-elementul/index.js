@@ -98,7 +98,7 @@ function corect(){
     setTimeout(() => {
         $("ecran_principal").style.display = "block";
         $("corect").style.display = "none";
-        document.body.style.backgroundColor = "#709bff";
+        document.body.style.backgroundColor = "#272727";
     }, 750);
     start();
 }
@@ -110,7 +110,7 @@ function gresit(){
     setTimeout(() => {
         $("ecran_principal").style.display = "block";
         $("gresit").style.display = "none";
-        document.body.style.backgroundColor = "#709bff";
+        document.body.style.backgroundColor = "#272727";
     }, 1250);
     start();
 }

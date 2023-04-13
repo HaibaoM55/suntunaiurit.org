@@ -35,6 +35,8 @@ while(True):
     elif("del file " in cmd):
         file_name = cmd.replace("del file ", "")
         commands.del_file(file_name)
+    elif(cmd == "make blogart"):
+        commands.make_blogart()
     elif("cd " in cmd):
         directory = cmd.replace("cd ", "")
         commands.cd(directory)

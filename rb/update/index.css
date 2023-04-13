@@ -8,7 +8,7 @@
 }
 #anunt_text{
     text-align: start;
-    background-color: #ada7ff;
+    background-color: #353535;
     max-width: 40%;
 }
 @media(max-width: 900px){

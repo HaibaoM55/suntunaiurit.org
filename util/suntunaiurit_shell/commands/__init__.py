@@ -166,3 +166,42 @@ def getdir():
 def reloadf():
     os.system("python main.py")
     exit()
+def make_blogart():
+    with open(f"{pathtoroot}/util/blogart_no.txt") as f:
+        blogart_nr = f.read()
+        blogart_nr = int(blogart_nr)
+        blogart_nr += 1
+    with open(f"{pathtoroot}/util/blogart_no.txt", "w") as f:
+        f.write(str(blogart_nr))
+    with open(f"{pathtoroot}/blog/postare/{blogart_nr}.html", "w") as f:
+        f.write("""<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Titlu</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Salut, sunt HaibaoM55, imi place sa programez si acesta este site-ul meu!" />
+        <link rel = "icon" href = "/img/favicon.png" />
+        <link rel = "stylesheet" href = "index.css"/>
+        <link rel = "stylesheet" href = "/css/navbar.css"/>
+        <link rel = "stylesheet" href = "/css/global.css"/>
+    </head>
+    <script src = "/js/components/navbar.js"></script>
+    <body>
+        <div id = "navbar">
+            <script>
+                navbar();
+            </script>
+        </div>
+        <div id = "blog_txt_hlpr">
+            <div id = "blog_txt">
+                <h1 id = "blog_txt_titlu">Titlu</h1>
+                <h2>
+                    Hello World
+                </h2>
+            </div>
+        </div>
+    </body>
+    <script src = "/js/global.js"></script>
+    <script src = "/js/navbar.js"></script>
+</html>""")

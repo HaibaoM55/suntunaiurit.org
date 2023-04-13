@@ -1,8 +1,11 @@
 #navbar{
     margin: 0px;
     transform: translateY(-10px);
-    background-color: #9bb8fd;
+    background-color: #272727;
     font-size: large;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #353535;
 }
 #navbar ul{
     display: flex;

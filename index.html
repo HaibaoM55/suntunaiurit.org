@@ -10,22 +10,21 @@
         <link rel = "stylesheet" href = "css/navbar.css"/>
         <link rel = "stylesheet" href = "css/global.css"/>
     </head>
-    <script src = "../js/components/navbar.js"></script>
+    <script src = "js/global.js"></script>
+    <script src = "/js/components/navbar.js"></script>
+    <script src = "/js/components/postari.js"></script>
     <body>
         <div id = "navbar">
-            <div id = "navbar">
-                <script>
-                    navbar();
-                </script>
-            </div>
+            <script>
+                navbar();
+            </script>
         </div>
         <div id = "salut">
             <h1>
-                Salut👋, sunt 
-                <a class = "subliniat" href = "https://github.com/HaibaoM55">HaibaoM55</a> si imi place sa programez👨‍💻!
+                Salut👋, sunt HaibaoM55!
             </h1>
         </div>
-        <div id = "despre">
+        <!-- <div id = "despre">
             <div id = "despre_site">
                 <h1 class = "centru">Despre site</h1>
                 <h2>
@@ -50,14 +49,72 @@
                     Meg <a href = 'meg/'><img  id = "meg_png" src = "/img/meg.png" height = "30" width = "30" ></a>
                 </h2>
             </div>
-        </div> 
+        </div>  -->
+        <div id = "despre_mine">
+            <h1 id = "despre_mine_titlu">Despre mine</h1>
+            <h2>
+                Ma cheama Raul, am 13 ani si imi place sa programez👨‍💻.
+                <br>
+                Stiu limbajele:
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                </ul>
+                Si stiu sa folosesc:
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Terminal-ul</li>
+                </ul>
+                Pe langa programare, imi mai place sa ma joc pe calculator si cu catelusa mea, Meg.
+                <a href = 'meg/'><img  id = "meg_png" src = "/img/meg.png" height = "30" width = "30" ></a><br>
+                Link-uri:
+                <a href = "https://github.com/HaibaoM55" class = "subliniat">Github</a>,
+                <a href = "https://steamcommunity.com/id/HaibaoM55/" class = "subliniat">Steam</a>,
+                <a href = "https://codepen.io/HaibaoM" class = "subliniat">CodePen</a> si
+                <a href = "https://stackoverflow.com/users/17001327/haibaom" class = 'subliniat'>StackOverflow</a>
+            </h2>
+        </div>
+        <div id = "despre_site_hlpr">
+            <div id = "despre_site">
+                <h1 id ="despre_site_titlu">Despre suntunaiurit.org</h1>
+                <h2>
+                    Suntunaiurit.org este site-ul in care poti gasi
+                    informatii despre mine, proiecte, joculete si multe altele.
+                    Domeniul a fost cumparat pe data de 12 Aprilie 2022, 
+                    iar versiunea actuala este 0.4! Site-ul a fost mai intai
+                    cu informatii si jocuri. Dupa aceea l-am schimbat la un
+                    site de scris notite, iar acum a revenit la forma initiala,
+                    cu un design mai bun, cu mai multe pagini si cu mai multe 
+                    joculete.
+                </h2>
+            </div>
+        </div>
+        <h1 style = "text-align: center;">Postari de pe blog</h1>
+        <div id = "postari">
+            <script>
+                postari();
+            </script>
+        </div>
         <footer>
             <div id= "nr_viz">
                 Numar vizite: 
             </div>
+            <div>
+                <a href = 'contact/' class = "btn_small">Contact</a>
+            </div>
+            <div>
+                <a href = 'https://github.com/HaibaoM55/suntunaiurit.org' class = "btn_small">Github</button>
+            </div>
+            <div>
+                <a href = "https://ko-fi.com/HaibaoM55/" class = "btn_small">Ko-Fi</a>
+            </div>
         </footer>
     </body>
-    <script src = "js/global.js"></script>
     <script src = "js/navbar.js"></script>
     <script src = "js/components/nr_vizitatori.js"></script>
 </html>

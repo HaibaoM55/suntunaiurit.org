@@ -1,12 +1,10 @@
 #salut{
-    background-color: #709bff;
     margin-bottom: 300px;
     margin-top: 200px;
     text-align: center;
     font-size: xx-large;
 }
-
-#despre_site{
+/* #despre_site{
     max-width: 50%;
     font-size: x-large;
     background-color: #ada7ff;
@@ -50,7 +48,47 @@
     background-color: #ada7ff;
     max-width: 40%;
     font-size: x-large;
+} */
+#despre_mine{
+    max-width: 30%;
+    background-color: #353535;
 }
+#despre_mine_titlu{
+    text-align: center;
+}
+#despre_site_hlpr{
+    display: grid;
+    align-items: end;
+    place-items: end;
+}
+#despre_site{
+    max-width: 30%;
+    background-color: #353535;
+    margin-bottom: 20px;
+}
+#despre_site_titlu{
+    text-align: center;
+}
+@media(max-width: 1200px){
+    #despre_mine{
+        max-width: 50%;
+        margin-left: 0px;
+    }
+    #despre_site{
+        max-width: 50%;
+        margin-left: 0px;
+    }
+} 
+@media(max-width: 700px){
+    #despre_mine{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    #despre_site{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+} 
 #meg_png{
     transition: 200ms ease-in;
 }
@@ -58,9 +96,44 @@
     height: 100px;
     width: 100px;
 }
-footer{
-    height: 20px;
-    width: 100%;
-    background-color: #6b6798;
-    color: white;
+.postare{
+    min-width: 450px;
+    height: 400px;
+    background-color: #444F5A;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#postari{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 20px;
+}
+.postare_titlu{
+    text-align: center;
+    font-size: large;
+}
+@media(max-width: 1900px){
+    #postari{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width: 1200px){
+    #postari{
+        flex-direction: column;
+    }
+}
+@media(max-width: 1000px){
+    #postari{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width: 450px){
+    .postare{
+        min-width: 300px;
+    }
+    .postare img{
+        width: 300px;
+    }
 }
