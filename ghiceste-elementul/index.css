@@ -116,3 +116,18 @@
     height: 35px;
     font-size: 20px;
 }
+#optiuni{
+    text-align: end;
+}
+#optiuni button{
+    font-size: x-large;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+#optiuni button:hover{
+    color: #000 !important;
+}

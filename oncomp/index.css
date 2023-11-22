@@ -1,0 +1,21 @@
+#html{
+    margin: 0px;
+    resize: none;
+    background-color: #282828;
+    color: white;
+    border:5px solid #000;
+    outline: none;
+    height: 300px;
+    width: 450px;
+    font-size: large;
+}
+#run_btn{
+    width: 400px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+#compiler{
+    background-color: white;
+    width: 99%;
+    min-height: 200px;
+}

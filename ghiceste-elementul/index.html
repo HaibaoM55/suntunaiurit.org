@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Ghiceste Elementul!</title>
+        <title>Ghiceste Substanta!</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Suntunaiurit - testchimie" />
         <link rel = "icon" href = "/img/favicon.png" />
@@ -20,17 +20,15 @@
             </script>
         </div> -->
         <div id = "ecran_principal">
-            <!-- <div id = "titlu">
-                <h1>Ghiceste Elementul!</h1>
-                <h2>De Bogdan Raul</h2>
-            </div> -->
-            <!-- <div id = 'modifica'>
-                <button onclick = "modifica();" id = "modifica_btn">🛠️</button>
-            </div> -->
-            <div id = "tabel_periodic">
-                <script>
-                    tabel_comp();
-                </script>
+            
+            <div id = "optiuni">
+                <button onclick = "nemetaleF()" id = "nemetale">Nemetale</button>
+                <button onclick = "aciziF()" id = "acizi">Acizi</button>
+                <button onclick = "bazeF()" id = "baze">Baze</button>
+                <br>
+                <button onclick = "metaleF()" id = "metale">Metale</button>
+                <button onclick = "saruriF()" id = "saruri">Săruri</button>
+                <button onclick = "oxiziF()" id = "oxizi">Oxizi</button>
             </div>
             <div id = "helper_element_chimic">
                 <div id="element_chimic">
@@ -55,6 +53,6 @@
         </div>
     </body>
     <script src = "/js/navbar.js"></script>
-    <script src = "js/restul_tab.js"></script>
+    <script src = "elemente.js"></script>
     <script src = "index.js"></script>
 </html>

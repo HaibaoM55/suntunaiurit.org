@@ -91,6 +91,7 @@ table {
 }
 footer{
     display: flex;
+    height: 100%;
     flex-direction: row;
     justify-content: center;
     border-top: solid 2px #1b1919;

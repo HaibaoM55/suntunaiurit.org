@@ -1,0 +1,19 @@
+{
+    "Acid acetic":"CH*3COOH",
+    "Acid azotic":"HNO*3",
+    "Acid azotos":"HNO*2",
+    "Acid bromhidric":"HBr",
+    "Acid carbonic":"H*2CO*3",
+    "Acid cianhidric":"HCN",
+    "Acid clorhidric":"HCl",
+    "Acid hipocloros":"HClO",
+    "Acid cloros":"HClO*2",
+    "Acid cloric":"HClO*3",
+    "Acid percloric":"HClO*5",
+    "Acid fluorhidric":"HF",
+    "Acid fosforic":"H*3PO*4",
+    "Acid fosforos":"H*3PO*3",
+    "Acid iodhidric":"HI",
+    "Acid sulfhidric":"H*2SO*4",
+    "Acid sulfuric":"H*2SO*3"
+}
