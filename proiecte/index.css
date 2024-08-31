@@ -2,57 +2,77 @@
     text-align: center;
     font-size: xx-large;
 }
-.unproiect{
-	font-size: large;
-	/* text-align: center; */
-	width: 30%;
-	height: auto;
-	background-color: #353535;
-	margin-bottom: 40px;
+#proiecte ul{
+    list-style-type: none;
 }
-.unproiect h2{
-    text-align: start;
+.proiect button{
+    margin-top: 5px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    transition: ease-out 200ms;
 }
-.triproiect{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 33%;
+.proiect button:hover{
+    font-size: 70px;
 }
-.doiproiect{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex: 50%;
+@keyframes moveback {
+    from{margin: -105px;}
+    to{margin:0px;}
 }
-.proiect3{
-    width: 30%;
-    background-color: #353535;
-    height: auto;
+@keyframes backmove {
+    from{margin:0px;}
+    to{margin: -105px;}
 }
-.proiect h1{
-    text-align: center;
-    font-size: xx-large;
+.descriere{
+    margin: 0px;
+    display: none;
+    background-color: #4a4a4a;
+    max-width: 470px;
+    font-size: x-large;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border: 2px black;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    word-wrap: break-word; 
 }
-.proiect h2{
-    text-align: start;
-    font-size: xx-large;
+.descriere p{
+    margin: 2px;
 }
-.proiect2{
-    width: 50%;
-    background-color: #353535;
-    height: auto;
-    margin-left: 10px;
+.descriere svg{
+    margin: 10px;
 }
-@media (max-width: 1000px) {
-    .triproiect{
-        flex-direction: column;
-    }
-    .proiect3{
-        margin-bottom: 10px;
-        width: 100%;
-    }
-	.unproiect{
-		width: 100%;
-	}
+.descriere path{
+    transition: linear 150ms;
+}
+.GithubSvg:hover path{
+    fill: #000;
+}
+.PlaySvg polygon, circle{
+    transition: linear 150ms;
+}
+.PlaySvg:hover polygon{
+    fill:#fff;
+}
+.PlaySvg:hover circle{
+    fill:#000;
+}
+.DownloadSvg path, text, rect{
+    transition: linear 200ms;
+}
+.DownloadSvg:hover path{
+    stroke: #fff;
+}
+.DownloadSvg:hover text{
+    fill: #fff;
+}
+.DownloadSvg:hover rect{
+    fill: #000;
+}
+.WebSvg g, path{
+    transition: linear 150ms;
+}
+.WebSvg:hover path{
+    fill: #000;
 }
