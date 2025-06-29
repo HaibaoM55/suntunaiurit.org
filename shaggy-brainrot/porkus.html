@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iubire johnus porkus</title>
+</head>
+<body>
+        <h1 id="head">
+                Cat de mult il iubesti pe johnus porkus?
+        </h1>
+        <div id="dih">
+                <label for="points">Points (between 0 and 100):</label>
+                <input type="range" id="points" name="points" min="0" max="100">
+                <button id="btn" onclick="pork()">
+                        submit
+                </button>
+                <br>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/04/62/e6/0462e6b9-45b0-f229-afc0-d2f79cce2cf4/artwork.jpg/1200x630bb.jpg">
+        </div>
+        
+</body>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #head{
+        text-align: center;
+        color: black;
+        
+    }
+    #dih{
+        text-align: center;
+    }
+</style>
+<script>
+    function pork(){
+        var val=document.getElementById("points").value;
+        if(val==100){
+            alert("W RIZZ")
+        }
+        else{
+            alert("L RIZZ")
+        }
+    }
+</script>
+</html>
