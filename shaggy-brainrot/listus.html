@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <h1 id="head">
+        To-do list
+    </h1>
+    <div id="terogcentreazate">
+    <input id="miau" placeholder="Ce vei face azi?">
+    <button id="btn" onclick="adauga()">
+        submit
+    </button>
+    <ol id="dih">
+
+    </ol>
+    </div>
+</body>
+<style>
+     #head{
+            font-size:50px;
+            color:cyan;
+            text-align: center;
+        }
+        #terogcentreazate{
+                text-align: center;
+        }
+        ol{
+  list-style-position: inside;
+}
+
+</style>
+<script>
+    
+    function adauga(){
+        const node = document.createElement("li");
+const textnode = document.createTextNode(document.getElementById("miau").value);
+const button = document.createElement("button");
+button.innerText = "sterge";
+button.onclick=function(){
+    node.remove()
+};
+node.appendChild(textnode);
+node.appendChild(button)
+node.style.textAlign="center";
+document.getElementById("dih").appendChild(node); 
+    }
+</script>
+</html>

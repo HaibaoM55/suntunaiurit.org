@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghiceste cuvantul</title>
+    <style>
+        #head {
+            text-align: center;
+            color: rgb(7, 35, 217);
+        }
+
+        #btndiv {
+            display: grid;
+            place-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .hidden {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            transition: all 0.5s ease;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        #result.show {
+            opacity: 1;
+            height: auto;
+        }
+        
+        .success {
+            color: green;
+        }
+        
+        .error {
+            color: red;
+        }
+        
+        button {
+            position: relative;
+            text-decoration: none;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 48px;
+            width: 160px;
+            cursor: pointer;
+            font-weight: bold;
+            height: 55px;
+            -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+            margin-top: 10px;
+        }
+
+        button span {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 4px;
+            right: 4px;
+            bottom: 4px;
+            left: 4px;
+            text-align: center;
+            background: #2e2e2e;
+            color: rgba(255, 255, 255, 0.781);
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        button:hover span {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: 400%;
+            opacity: 0;
+            transition: 0.5s;
+            background: linear-gradient(
+                45deg,
+                #91155d,
+                #525296,
+                #0f0,
+                #ff0,
+                #fb0094,
+                #00f,
+                #0f0,
+                #ff0
+            );
+            animation: animate123 20% linear infinte;
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: 400%;
+            filter: blur(20px);
+            transition: 0.5s;
+            background: linear-gradient(
+                45deg,
+                #91155d,
+                #525296,
+                #0f0,
+                #ff0,
+                #fb0094,
+                #00f,
+                #0f0,
+                #ff0
+            );
+            animation: animate123 20% linear infinte;
+        }
+
+        button:hover::before,
+        button:hover::after {
+            opacity: 1;
+        }
+
+        @keyframes animate123 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 300% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        button span::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">
+        Ghiceste cuvintele
+        <br>
+        Hint: Those who know
+    </h1>
+    
+    <div id="btndiv">
+        <textarea id="messageBox" name="message" rows="10" cols="30"></textarea>
+        <button class="btn" onclick="analize()">
+            <span>SUBMIT</span>
+        </button>
+    </div>
+    
+    <div id="result"></div>
+
+    <script>
+        function analize() {
+            const text = document.getElementById("messageBox").value.toLowerCase();
+            const resultElement = document.getElementById("result");
+            const inputArea = document.getElementById("btndiv");
+
+            if (text.includes("john pork")) {
+                // Hide input area
+                inputArea.classList.add("hidden");
+                
+                // Show success message
+                resultElement.innerHTML = "<h1 class='success'>🎉 CONGRATULATIONS! 🎉</h1><p>You guessed it right!</p>";
+                resultElement.classList.add("show");
+                
+                // Add reset button
+                const resetBtn = document.createElement("button");
+                resetBtn.innerHTML = "<span>PLAY AGAIN</span>";
+                resetBtn.onclick = function() {
+                    inputArea.classList.remove("hidden");
+                    resultElement.classList.remove("show");
+                    document.getElementById("messageBox").value = "";
+                };
+                resultElement.appendChild(resetBtn);
+            } else {
+                // Hide input area temporarily
+                inputArea.classList.add("hidden");
+                
+                // Show error message
+                resultElement.innerHTML = "<h1 class='error'>❌ WRONG ANSWER</h1><p>Try again!</p>";
+                resultElement.classList.add("show");
+                
+                // Add try again button
+                const tryAgainBtn = document.createElement("button");
+                tryAgainBtn.innerHTML = "<span>TRY AGAIN</span>";
+                tryAgainBtn.onclick = function() {
+                    inputArea.classList.remove("hidden");
+                    resultElement.classList.remove("show");
+                };
+                resultElement.appendChild(tryAgainBtn);
+            }
+        }
+    </script>
+</body>
+</html>

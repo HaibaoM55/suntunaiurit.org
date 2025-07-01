@@ -11,6 +11,7 @@
 }
 #lista_brainrot li{
     list-style: "";
+    margin-bottom: 20px;
 }
 #lista_brainrot li:hover{
     list-style: "🥀";
