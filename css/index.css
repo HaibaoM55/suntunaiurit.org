@@ -49,22 +49,28 @@
     max-width: 40%;
     font-size: x-large;
 } */
+#despre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
 #despre_mine{
-    max-width: 30%;
-    background-color: #353535;
+    margin-top: 30px;
+    max-width: 40%;
+    background-color: #191a1f;
+    border: 4px solid #191a1f;
+    border-radius: 15px;
 }
 #despre_mine_titlu{
     text-align: center;
 }
-#despre_site_hlpr{
-    display: grid;
-    align-items: end;
-    place-items: end;
-}
 #despre_site{
-    max-width: 30%;
-    background-color: #353535;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    max-width: 40%;
+    background-color: #191a1f;
+    border: 4px solid #191a1f;
+    border-radius: 15px;
 }
 #despre_site_titlu{
     text-align: center;
@@ -79,7 +85,10 @@
         margin-left: 0px;
     }
 } 
-@media(max-width: 700px){
+@media(max-width: 1000px){
+    #despre{
+        flex-direction: column;
+    }
     #despre_mine{
         max-width: 100%;
         margin-left: 0px;
@@ -136,4 +145,14 @@
     .postare img{
         width: 300px;
     }
+}
+#despre_mine ul{
+    list-style: none;
+}
+.limbajStiut{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.toolStiut{
+    margin-bottom: 15px;
 }

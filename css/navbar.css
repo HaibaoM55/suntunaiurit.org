@@ -1,11 +1,11 @@
 #navbar{
     margin: 0px;
     transform: translateY(-10px);
-    background-color: #272727;
+    background-color: #0e0e12;
     font-size: large;
     border-bottom-width: 5px;
     border-bottom-style: solid;
-    border-bottom-color: #353535;
+    border-bottom-color: #353535;;
 }
 #navbar ul{
     display: flex;
@@ -13,9 +13,12 @@
 }
 #navbar li{
     margin-left: 25px;
+    transition: 150ms ease-in-out;
 }
 #navbar li:hover{
     list-style: "👉";
+    transform: translateY(10px);
+    scale: 1.35;
 }
 #navbar li{
     list-style: none;
@@ -36,6 +39,10 @@ a{
     #navbar ul{
         flex-direction: column;
         display: none;
+    }
+    #navbar li:hover{
+        list-style: "👉";
+        scale: 1.05;
     }
     #bara{
         display: block;
