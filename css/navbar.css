@@ -28,24 +28,19 @@
     list-style: none;
     margin-right: 30px;
 }
-#navbar li:hover{
-    list-style: "👉";
-    scale: 1.15;
+.navbarElement:hover{
+    scale: 1.35;
 }
 #navbar li:nth-child(1){
-    font-size: clamp(30px, 2vw, 50px);
+    font-size: clamp(30px, 4vw, 50px);
     width: 100%;
     text-align: start;
-}
-#navbar li:nth-child(1):hover{
-    list-style: none;
-    scale: 1.15
 }
 a{
     text-decoration: none;
     color: #f9f9f9;
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     #navbar{
         flex-direction: column;
         height: auto;
@@ -58,7 +53,7 @@ a{
         align-items: center;
     }
     #navbar li{
-        margin-left: 0;
+        margin-left: 0px;
         margin-bottom: 10px;
     }
     #navbar li:nth-child(1){
